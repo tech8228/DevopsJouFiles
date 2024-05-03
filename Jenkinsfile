@@ -5,9 +5,7 @@ pipeline {
             label 'docker-agent-python3'
             }
       }
-    options {
-        TZ 'America/New_York'
-    }
+   
     triggers {
         pollSCM '* * * * *'
     }
