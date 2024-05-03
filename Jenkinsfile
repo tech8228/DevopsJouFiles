@@ -1,5 +1,6 @@
 pipeline {
     agent { 
+        timezone 'America/New_York'
         node {
             label 'docker-agent-python3'
             }
