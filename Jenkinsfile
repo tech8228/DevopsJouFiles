@@ -6,7 +6,7 @@ pipeline {
             }
       }
     options {
-        timezone 'America/Toronto'
+        timezone 'America/New_York'
     }
     triggers {
         pollSCM '* * * * *'
