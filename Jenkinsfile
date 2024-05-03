@@ -1,10 +1,13 @@
 pipeline {
     agent { 
-        timezone 'America/New_York'
+        
         node {
             label 'docker-agent-python3'
             }
       }
+    options {
+        timezone 'America/New_York'
+    }
     triggers {
         pollSCM '* * * * *'
     }
